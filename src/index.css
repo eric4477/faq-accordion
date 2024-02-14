@@ -1,6 +1,9 @@
 :root {
   --pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --light-pink: hsl(275, 100%, 97%);
   --white: hsl(0, 0%, 100%);
+  --dark-purple: hsl(292, 42%, 14%);
   --background-image-lg: url("../assets/images/background-pattern-desktop.svg");
   --background-image-sm: url("../assets/images/background-pattern-mobile.svg");
 }
@@ -21,6 +24,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--pink);
+  font-family: "Work Sans", sans-serif;
 }
 body::after {
   content: "";
@@ -48,6 +52,49 @@ body::after {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
-  min-height: 30rem;
+  min-height: 17rem;
+  padding: 2rem 1rem;
   align-self: center;
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.accordion-header h1 {
+  font-size: 3.2rem;
+  color: var(--dark-purple);
+}
+
+.accordion-items {
+  padding: 0 1.5rem;
+}
+.item-title {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.item-content p {
+  color: var(--grayish-purple);
+  font-weight: 400;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 1px solid var(--light-pink);
+}
+
+.item-title h3 {
+  color: var(--dark-purple);
+}
+
+.item:last-child hr {
+  display: none;
 }
