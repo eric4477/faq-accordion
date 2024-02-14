@@ -1,5 +1,5 @@
 function Accordion() {
-  return <div>Accordion</div>;
+  return <div className="accordion"></div>;
 }
 
 export default Accordion;

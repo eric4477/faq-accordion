@@ -1,1 +1,53 @@
+:root {
+  --pink: hsl(275, 100%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --background-image-lg: url("../assets/images/background-pattern-desktop.svg");
+  --background-image-sm: url("../assets/images/background-pattern-mobile.svg");
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--pink);
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17rem;
+  background-image: var(--background-image-lg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.accordion {
+  background-color: var(--white);
+  width: 95%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 30rem;
+  align-self: center;
+}
