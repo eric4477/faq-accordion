@@ -81,18 +81,25 @@ body::after {
   justify-content: space-between;
   cursor: pointer;
 }
+
+.item-title h3 {
+  font-size: 1.1rem;
+  color: var(--dark-purple);
+  transition: 0.2s ease-in-out;
+}
+
+.item-title h3:hover {
+  color: #ad28eb;
+}
+
 .item-content p {
   color: var(--grayish-purple);
   font-weight: 400;
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   border: 1px solid var(--light-pink);
-}
-
-.item-title h3 {
-  color: var(--dark-purple);
 }
 
 .item:last-child hr {
