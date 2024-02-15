@@ -13,9 +13,7 @@ function Accordion({ items }) {
 
   const renderedItems = items.map((item, index) => {
     const isExpanded = index === itemIndex;
-    let icon = isExpanded
-      ? "../assets/images/icon-minus.svg"
-      : "../assets/images/icon-plus.svg";
+    let icon = isExpanded ? "/images/icon-minus.svg" : "/images/icon-plus.svg";
 
     let alt = isExpanded ? "icon-minus" : "icon-plus";
 
@@ -40,7 +38,7 @@ function Accordion({ items }) {
     <div className="accordion">
       <div className="accordion-header">
         <span>
-          <img src="../assets/images/icon-star.svg" alt="icon-star" />
+          <img src="/images/icon-star.svg" alt="icon-star" />
         </span>
         <h1>FAQs</h1>
       </div>

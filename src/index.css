@@ -4,8 +4,8 @@
   --light-pink: hsl(275, 100%, 97%);
   --white: hsl(0, 0%, 100%);
   --dark-purple: hsl(292, 42%, 14%);
-  --background-image-lg: url("../assets/images/background-pattern-desktop.svg");
-  --background-image-sm: url("../assets/images/background-pattern-mobile.svg");
+  --background-image-lg: url("/images/background-pattern-desktop.svg");
+  --background-image-sm: url("/images/background-pattern-mobile.svg");
 }
 
 * {
