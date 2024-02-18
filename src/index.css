@@ -52,8 +52,8 @@ body::after {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
-  min-height: 17rem;
-  padding: 2rem 1rem;
+  min-height: auto;
+  padding: 2rem 1rem 1.5rem 1rem;
   align-self: center;
 }
 
@@ -80,6 +80,7 @@ body::after {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  gap: 1rem;
 }
 
 .item-title h3 {
@@ -104,4 +105,13 @@ hr {
 
 .item:last-child hr {
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body::after {
+    background-image: var(--background-image-sm);
+  }
+  .accordion-items {
+    padding: 0 0.5rem;
+  }
 }
