@@ -80,13 +80,16 @@ body::after {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .item-title h3 {
   font-size: 1.1rem;
   color: var(--dark-purple);
   transition: 0.2s ease-in-out;
+}
+.item-title span {
+  padding-top: 0.5rem;
 }
 
 .item-title h3:hover {
@@ -107,10 +110,17 @@ hr {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .item-title span {
+    padding-top: 0.3rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   body::after {
     background-image: var(--background-image-sm);
   }
+
   .accordion-items {
     padding: 0 0.5rem;
   }
